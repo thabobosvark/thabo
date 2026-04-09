@@ -595,6 +595,109 @@
   </footer>
 
   <script>
+
+  // ==============================
+  // LEVEL 3: CONSOLE BRAND MESSAGE
+  // Appears when devtools console is opened
+  // ==============================
+  console.log(
+    "%c⚠ TERMINAL SECURITY OVERRIDE",
+    "color: #ff3333; font-size: 36px; font-weight: 900; text-shadow: 2px 2px #000; font-family: monospace;"
+  );
+  console.log(
+    "%c[ BOSVARK-SEC ] Unauthorised access attempt logged.",
+    "color: #ff6b35; font-size: 14px; font-family: monospace;"
+  );
+  console.log(
+    "%cThis terminal is monitored. If you are a developer or recruiter who found a vulnerability, I want to hear from you:\n  thabobosvark@icloud.com\n  github.com/thabobosvark",
+    "color: #8a7a7a; font-size: 13px; font-family: monospace; line-height: 1.8;"
+  );
+  console.log(
+    "%c-- Thabo Bosvark | Aspiring Cybersecurity Analyst | ISC26 Hamburg",
+    "color: #e02020; font-size: 11px; font-family: monospace; font-style: italic;"
+  );
+
+  // ==============================
+  // LEVEL 1: DISABLE RIGHT-CLICK & KEYBOARD SHORTCUTS
+  // Stops 90% of casual users
+  // ==============================
+  document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    // Flash a subtle red border on the body briefly
+    document.body.style.outline = '2px solid #e02020';
+    document.body.style.outlineOffset = '-2px';
+    setTimeout(() => {
+      document.body.style.outline = '';
+      document.body.style.outlineOffset = '';
+    }, 600);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    const blocked =
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && ['I','i','J','j','C','c','K','k'].includes(e.key)) ||
+      (e.ctrlKey && ['U','u','S','s'].includes(e.key));
+
+    if (blocked) {
+      e.preventDefault();
+      e.stopPropagation();
+      // Terminal-style alert injected into the page instead of browser alert
+      const alertEl = document.createElement('div');
+      alertEl.style.cssText = [
+        'position:fixed','top:50%','left:50%',
+        'transform:translate(-50%,-50%)',
+        'background:#0a0000','border:1px solid #e02020',
+        'border-radius:10px','padding:1.5rem 2rem',
+        'font-family:DM Mono,monospace','font-size:0.85rem',
+        'color:#ff3333','z-index:99999','text-align:center',
+        'box-shadow:0 0 40px rgba(224,32,32,0.4)',
+        'animation:sshFadeIn 0.2s ease forwards',
+        'max-width:360px','width:90vw'
+      ].join(';');
+      alertEl.innerHTML = `
+        <div style="font-size:1.1rem;font-weight:700;margin-bottom:0.5rem">
+          &#x26A0; TERMINAL SECURITY OVERRIDE
+        </div>
+        <div style="color:#8a7a7a;font-size:0.78rem;line-height:1.7">
+          Inspect access denied.<br/>
+          <span style="color:#e02020">bosvark-sec-scanner v1.0</span>
+        </div>`;
+      document.body.appendChild(alertEl);
+      setTimeout(() => alertEl.remove(), 2200);
+      return false;
+    }
+  });
+
+  // ==============================
+  // LEVEL 2: DEBUGGER TRAP
+  // Freezes DevTools panel in an infinite loop
+  // Only fires when DevTools is actually open
+  // ==============================
+  (function _devtoolsTrap() {
+    let devOpen = false;
+    const threshold = 160;
+
+    setInterval(() => {
+      const start = performance.now();
+      // The debugger statement only takes time when DevTools is open
+      // eslint-disable-next-line no-debugger
+      debugger;
+      const elapsed = performance.now() - start;
+      if (elapsed > threshold && !devOpen) {
+        devOpen = true;
+        // When DevTools detected: fire the console brand, glitch the title
+        const title = document.querySelector('.game-title, .hero-name');
+        if (title) {
+          title.style.transition = 'filter 0.1s';
+          title.style.filter = 'hue-rotate(180deg) brightness(1.5)';
+          setTimeout(() => { title.style.filter = ''; }, 400);
+        }
+      } else if (elapsed <= threshold) {
+        devOpen = false;
+      }
+    }, 1000);
+  })();
+
   // ==============================
   // FEATURE 3: SSH LOADER
   // ==============================
