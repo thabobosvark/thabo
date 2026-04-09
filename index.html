@@ -108,7 +108,7 @@
         Aspiring Cybersecurity Analyst &amp; HPC Enthusiast
       </p>
       <p class="hero-sub animate-fade-up delay-4">
-        Final-year Computer Engineering @ CPUT - HPC Competitor - ISC26 Hamburg 🇩🇪 - Cape Town
+        Final-year Computer Engineering @ CPUT - HPC Competitor - ISC26 Hamburg <img src="https://flagcdn.com/w20/de.png" class="flag-img flag-inline" alt="DE" /> - Cape Town
       </p>
       <div class="hero-actions animate-fade-up delay-5">
         <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -120,7 +120,7 @@
       <div class="stat-divider"></div>
       <div class="stat"><span class="stat-num">2nd</span><span class="stat-label">CHPC Nationals</span></div>
       <div class="stat-divider"></div>
-      <div class="stat"><span class="stat-num">ISC26</span><span class="stat-label">Hamburg 🇩🇪</span></div>
+      <div class="stat"><span class="stat-num">ISC26</span><span class="stat-label">Hamburg <img src="https://flagcdn.com/w20/de.png" class="flag-img" alt="🇩🇪" /></span></div>
       <div class="stat-divider"></div>
       <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Languages</span></div>
     </div>
@@ -131,7 +131,7 @@
   <div class="countdown-banner" id="countdownBanner">
     <div class="countdown-inner container">
       <div class="countdown-label">
-        <span class="countdown-flag">🇩🇪</span>
+        <span class="countdown-flag"><img src="https://flagcdn.com/w40/de.png" class="flag-img flag-lg" alt="DE" /></span>
         <span id="countdownHeading">ISC26 Hamburg Countdown</span>
       </div>
       <div class="countdown-units" id="countdownUnits">
@@ -1077,17 +1077,23 @@
     const blocks = document.querySelectorAll('.translatable');
 
     const translations = [
-      // Zulu versions
+      // Setswana
       [
-        "Ngikhulele eKimberley - idolobha lamagugu - futhi ngakha into eqinile njengawo amagatsha. Ngaqala iziqu ze-Computer Science e-UP, kepha izidingo zezimali zangimanqoba. Angiyekanga. Ngafudukela e-CPUT, ngathola ukukhethwa kwami....",
-        "Ngisemnyakeni wokugcina we-Computer Engineering, ngifunda izifundo ezibalulekile. Inhloso yami ukungena nzulu ku-HPC, Networking, ne-Cybersecurity.",
-        "Uma ngingekho ku-terminal, ngisedlalela ithenis noma ngidweba izindlela zezigxibe. Ngikhuluma isiNgisi, isiZulu, isiXhosa, isiTswana, isiAfrikaans, Sotho, neSepedi."
+        "Ke gola mo Kimberley - motse wa dikhumo - mme ke aga selo se se tiileng jaaka letlapa. Ke simolotse diithuto tsa Computer Science kwa UP, fela ditlhokego tsa madi di nkgaotse. Ga ke a emela. Ke fallela CPUT, ke bona dikgato tse 11 tsa tlhagiso, ka nna setho sa sehlopha sa naga ya Afrika Borwa ya HPC, mme ka kgethiwa go ya ISC26 kwa Hamburg, Jeremane.",
+        "Ke mo ngwageng wa bofelo wa Computer Engineering, ke ithuta Dikgokagano tsa Elektroniki, Mekgwa ya Embedded, Ditlhomamiso tsa Netiweke, Dibanka tsa Data, le Porojeke ya Tlhamo. Morero wa me ke go tsena mo tebileng mo HPC, Networking le Cybersecurity.",
+        "Fa ke se kwa terminal, ke bapala tenisi kgotsa ke seka ditlhopho tsa cluster ka boikhabo. Ke bua Setswana, Sekgoa, Sesotho, Sepedi, Afrikaans, isiZulu le isiXhosa. Ke ntse ke ithuta - ka dinako tsotlhe."
       ],
-      // Xhosa versions
+      // Afrikaans
       [
-        "Ndikhulele eKimberley - isixeko samatyala - kwaye ndakha into eqinileyo. Ndaqala isidanga se-Computer Science e-UP, kodwa iimeko zemali zandikhathaza. Andiyekanga. Ndajika e-CPUT...",
-        "Ndikwimnyaka wokugqibela we-Computer Engineering. Injongo yam kukungena nzulu kwi-HPC, Networking, ne-Cybersecurity.",
-        "Xa ndingekho kwi-terminal, ndidlala ithenis okanye ndizozo izindlela zeziqulathi. Ndithetha isiNgesi, isiXhosa, isiZulu, isiTswana, isiAfrikaans, Sotho, neSepedi."
+        "Ek het grootgeword in Kimberley - die stad van diamante - en ek bou iets net so hard om te kraak. Ek het met n Rekenaarwetenskap-graad by UP begin, maar finansiele hindernisse het my gedwing om te tree. Ek het nie opgegee nie. Ek het na CPUT oorbeweeg, 11 onderskeidings behaal, by Suid-Afrika se nasionale HPC-span aangesluit, en is gekies vir ISC26 in Hamburg, Duitsland.",
+        "Ek is in my finale jaar van Rekenaaringenieurswese, en studeer Elektroniese Kommunikasie, Ingebedde Stelsels, Netwerke, Databasisse en my Industriele Ontwerpsprojek. My doel is om diep te gaan in HPC, Netwerke en Kuberveiligheid.",
+        "As ek nie voor n terminaal sit nie, speel ek tennis of skets ek klusterdiagramme vir pret. Ek praat Afrikaans, Setswana, Engels, Sesotho, Sepedi, isiZulu en isiXhosa. Nog steeds aan die leer - altyd."
+      ],
+      // Sepedi / Northern Sotho
+      [
+        "Ke goletse Kimberley - motse wa dikhumo - gomme ke aga selo se tiilego. Ke thomile go ithuta Computer Science kwa UP, fela mathata a madi a nthibetse. Ga ke a emela. Ke ile CPUT, ka hwetsa dikgato tse 11, ka tsena sehlopeng sa HPC sa Afrika Borwa, mme ka kgethiwa go ya ISC26 kwa Hamburg, Jeremane.",
+        "Ke mo ngwageng wa mafelelo wa Computer Engineering. Ke ithuta Dikgokagano tsa Elektroniki, Mekgwa ya Embedded, Netiweke, Dibanka tsa Data le Porojeke ya Tlhamo. Mokgwa wa ka ke go tsena ka botebo go HPC, Networking le Cybersecurity.",
+        "Ge ke se terminal, ke bapala tenisi goba ke thutha ditlhopho tsa cluster. Ke bolela Sepedi, Setswana, Afrikaans, Sesotho, isiZulu, isiXhosa le Seisemane. Ke sa ithuta - ka mehla."
       ],
       // English (original)
       null
@@ -1118,9 +1124,9 @@
     btn.addEventListener('click', () => {
       if (isAnimating) return;
       isAnimating = true;
-      langIndex = (langIndex + 1) % 3;
+      langIndex = (langIndex + 1) % 4;
 
-      const labels = ['Zulu 🇿🇦', 'Xhosa 🇿🇦', 'English 🌍'];
+      const labels = ['Setswana 🇿🇦', 'Afrikaans 🇿🇦', 'Sepedi 🇿🇦', 'English 🌍'];
       hint.textContent = 'Decoding to ' + labels[langIndex] + '...';
 
       // Phase 1: scramble to hex/random
