@@ -3,52 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Khuphuka Thabo Bosvark - Aspiring Cybersecurity Analyst &amp; HPC Enthusiast</title>
+  <title>Khuphuka Thabo Bosvark — Software Engineer &amp; HPC Competitor</title>
+  <meta name="description" content="Final-year Computer Engineering student at CPUT. ISC High Performance 2026 competitor (5th overall, 1st in Africa), cybersecurity intern, and HPC Club programme director." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-  <!-- CUSTOM CURSOR -->
-  <div class="cursor-block" id="cursor"></div>
-
-  <!-- SCROLL PROGRESS BAR -->
   <div class="scroll-progress" id="scrollProgress"></div>
-
-  <!-- ============================================================
-       FEATURE 3: SSH LOADER OVERLAY
-       ============================================================ -->
-  <div class="ssh-loader" id="sshLoader">
-    <div class="ssh-inner">
-      <div class="ssh-lines" id="sshLines"></div>
-    </div>
-  </div>
-
-  <!-- ============================================================
-       FEATURE 1: VULNERABILITY SCANNER OVERLAY
-       ============================================================ -->
-  <div class="vuln-overlay" id="vulnOverlay">
-    <div class="scan-line" id="scanLine"></div>
-    <div class="vuln-console" id="vulnConsole">
-      <div class="vuln-console-header">
-        <span class="vc-dot r"></span><span class="vc-dot y"></span><span class="vc-dot g"></span>
-        <span class="vc-title">bosvark-sec-scanner v1.0</span>
-      </div>
-      <div class="vuln-console-body" id="vulnBody"></div>
-      <div class="vuln-payoff" id="vulnPayoff" style="display:none">
-        <p class="vp-msg">"Security is a mindset.<br/>Let's secure your infrastructure together."</p>
-        <a href="#contact" class="vp-cta" id="vulnCTA">Contact Thabo →</a>
-      </div>
-    </div>
-    <button class="vuln-close" id="vulnClose">✕ Exit Scan</button>
-  </div>
 
   <!-- NAV -->
   <nav class="nav" id="nav">
-    <a href="#" class="nav-logo">K.T<span class="dot"> Bosvark</span></a>
+    <a href="#" class="nav-logo">bosvark</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -58,88 +27,60 @@
       <li><a href="#blog">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="nav-cta nav-scan-btn" id="navScanBtn">🔍 Scan Site</button>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="mailto:thabobosvark@icloud.com" class="nav-cta">Get in touch</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <!-- FEATURE 2: HPC NODE GRID CANVAS -->
-    <canvas class="node-grid-canvas" id="nodeCanvas"></canvas>
-    <!-- FEATURE 2: GIGAFLOPS DASHBOARD -->
-    <div class="flops-dashboard" id="flopsDash">
-      <div class="flops-title">CLUSTER SIMULATION</div>
-      <div class="flops-row"><span class="flops-label">GigaFLOPS</span><span class="flops-val" id="flopsVal">0.00</span></div>
-      <div class="flops-row"><span class="flops-label">Active Nodes</span><span class="flops-val" id="nodesVal">0</span></div>
-      <div class="flops-row"><span class="flops-label">Load</span><span class="flops-val" id="loadVal">0%</span></div>
-      <div class="flops-bar-wrap"><div class="flops-bar" id="flopsBar"></div></div>
-    </div>
+    <div class="container">
+      <div class="hero-copy">
+        <div class="hero-eyebrow"><span class="pulse"></span>Available for internships &amp; grad roles, 2027</div>
+        <h1 class="hero-name">Khuphuka Thabo<br /><span class="last">Bosvark</span></h1>
+        <p class="hero-title">Final-year <strong>Computer Engineering</strong> student building at the intersection of <strong>HPC</strong>, <strong>cybersecurity</strong>, and cloud infrastructure.</p>
+        <p class="hero-sub">
+          <span>CPUT, Cape Town</span>
+          <span>Team CHPC — ISC26 Hamburg <img src="https://flagcdn.com/w20/de.png" class="flag-img" alt="DE" /></span>
+          <span>Originally from Kimberley</span>
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">12/14</span><span class="stat-label">Distinctions</span></div>
+          <div class="stat"><span class="stat-num">5th</span><span class="stat-label">ISC26, 1st in Africa</span></div>
+          <div class="stat"><span class="stat-num">2nd</span><span class="stat-label">CHPC Nationals</span></div>
+          <div class="stat"><span class="stat-num">7</span><span class="stat-label">Languages</span></div>
+        </div>
+      </div>
 
-    <div class="hero-bg">
-      <div class="grid-overlay"></div>
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-    </div>
-    <div class="hero-content">
-      <div class="hero-terminal animate-fade-up delay-1" id="heroTerminal">
+      <div class="hero-terminal" id="heroTerminal">
         <div class="term-bar">
-          <span class="term-dot red"></span>
-          <span class="term-dot yellow"></span>
-          <span class="term-dot green"></span>
-          <span class="term-title">guest@bosvark:~$</span>
+          <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+          <span class="term-title">guest@bosvark:~</span>
         </div>
         <div class="term-body" id="termBody">
-          <div class="term-line"><span class="term-prompt">guest@bosvark:~$</span> <span class="term-cmd" id="termCmd"></span><span class="term-cursor" id="termCursor">█</span></div>
+          <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd" id="termCmd"></span><span class="term-cursor" id="termCursor">█</span></div>
           <div class="term-output" id="termOutput"></div>
         </div>
         <div class="term-input-row">
-          <span class="term-prompt-inline">guest@bosvark:~$</span>
-          <input class="term-input" id="termInput" type="text" placeholder="type help, about, skills, status, contact..." autocomplete="off" spellcheck="false" />
+          <span class="term-prompt-inline">$</span>
+          <input class="term-input" id="termInput" type="text" placeholder="try: whoami, skills, contact" autocomplete="off" spellcheck="false" />
         </div>
       </div>
-
-      <h1 class="hero-name animate-fade-up delay-2">
-        Khuphuka<br /><em>Thabo</em><br />Bosvark
-      </h1>
-      <p class="hero-title animate-fade-up delay-3">
-        Aspiring Cybersecurity Analyst &amp; HPC Enthusiast
-      </p>
-      <p class="hero-sub animate-fade-up delay-4">
-        Final-year Computer Engineering @ CPUT - HPC Competitor - ISC26 Hamburg <img src="https://flagcdn.com/w20/de.png" class="flag-img flag-inline" alt="DE" /> - Cape Town
-      </p>
-      <div class="hero-actions animate-fade-up delay-5">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
-      </div>
-    </div>
-    <div class="hero-stats animate-fade-up delay-5">
-      <div class="stat"><span class="stat-num">12/14</span><span class="stat-label">Distinctions</span></div>
-      <div class="stat-divider"></div>
-      <div class="stat"><span class="stat-num">2nd</span><span class="stat-label">CHPC Nationals</span></div>
-      <div class="stat-divider"></div>
-      <div class="stat"><span class="stat-num">ISC26</span><span class="stat-label">Hamburg <img src="https://flagcdn.com/w20/de.png" class="flag-img" alt="🇩🇪" /></span></div>
-      <div class="stat-divider"></div>
-      <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Languages</span></div>
     </div>
     <div class="scroll-hint">scroll ↓</div>
   </section>
 
-  <!-- HAMBURG COUNTDOWN -->
-  <div class="countdown-banner" id="countdownBanner">
-    <div class="countdown-inner container">
-      <div class="countdown-label">
-        <span class="countdown-flag"><img src="https://flagcdn.com/w40/de.png" class="flag-img flag-lg" alt="DE" /></span>
-        <span id="countdownHeading">ISC26 Hamburg Countdown</span>
+  <!-- HAMBURG RECAP BANNER -->
+  <div class="recap-banner">
+    <div class="container recap-inner">
+      <div class="recap-label">
+        <img src="https://flagcdn.com/w40/de.png" alt="DE" />
+        ISC High Performance 2026, Hamburg — Team CHPC placed 5th overall, 1st in Africa
       </div>
-      <div class="countdown-units" id="countdownUnits">
-        <div class="countdown-unit"><span class="cu-num" id="cdDays">--</span><span class="cu-label">Days</span></div>
-        <div class="countdown-unit"><span class="cu-num" id="cdHours">--</span><span class="cu-label">Hours</span></div>
-        <div class="countdown-unit"><span class="cu-num" id="cdMins">--</span><span class="cu-label">Mins</span></div>
-        <div class="countdown-unit"><span class="cu-num" id="cdSecs">--</span><span class="cu-label">Secs</span></div>
-      </div>
+      <div class="recap-stat">Read the recap in the <a href="#blog">blog</a> below →</div>
     </div>
   </div>
 
@@ -152,77 +93,66 @@
           <div class="about-headshot-wrap">
             <img src="headshot.jpeg" alt="Thabo Bosvark" class="about-headshot" />
           </div>
-          <h2 class="section-heading">The person<br /><em>behind the terminal</em></h2>
-          <!-- FEATURE 5: LANGUAGE TOGGLE - translatable paragraphs -->
+          <h2 class="section-heading">The person<br /><em>behind the work</em></h2>
           <div id="aboutTextBlocks">
             <p class="translatable">
-              I grew up in Kimberley - the city of diamonds - and I'm building something just as hard to crack.
+              I grew up in Kimberley — the city of diamonds — and I'm building something just as hard to earn.
               I started a Computer Science degree at UP, but financial barriers forced me to step away. I didn't stop.
-              I transferred to CPUT, earned 12 distinctions, joined South Africa's national HPC team, and got selected
-              for the ISC26 international competition in Hamburg, Germany.
+              I transferred to CPUT, earned 12 distinctions out of 14 modules, joined South Africa's national HPC team,
+              and got selected for the ISC26 international competition in Hamburg, Germany.
             </p>
             <p class="translatable">
-              I'm in my final year of Computer Engineering, studying Electronic Communications,
+              I'm in my final year of Computer Engineering, working through Electronic Communications,
               Embedded Systems, Network Systems, Database Systems, and my Industrial Design Project.
-              My goal is to go deep into <strong>HPC, Networking, and Cybersecurity</strong>,
-              with an eye on cloud infrastructure and finance analytics too.
+              My focus is <strong>HPC, networking, and cybersecurity</strong>, with an eye on cloud infrastructure
+              and finance analytics too.
             </p>
             <p class="translatable">
               When I'm not in a terminal, I'm on the tennis court or sketching cluster diagrams for fun.
-              I speak English, Tswana, Afrikaans, Zulu, Xhosa, Sotho, and Sepedi. Still learning - always.
+              I speak English, Tswana, Afrikaans, Zulu, Xhosa, Sotho, and Sepedi. Still learning — always.
             </p>
           </div>
 
-          <!-- FEATURE 5: DECODE BUTTON -->
           <div class="decode-row">
-            <button class="decode-btn" id="decodeBtn">🌍 Decode Languages</button>
+            <button class="decode-btn" id="decodeBtn">Decode languages</button>
             <span class="decode-hint" id="decodeHint"></span>
           </div>
 
           <div class="about-tags">
-            <span class="tag">🎾 Tennis</span>
-            <span class="tag">⚡ HPC Competitor</span>
-            <span class="tag">🌍 7 Languages</span>
-            <span class="tag">📍 Cape Town</span>
-            <span class="tag">🏠 From Kimberley</span>
-          </div>
-          <div class="ascii-art">
-<pre>
-  /\   /\
- (  o o  )   B O S V A R K
- =( Y )=     [ Bushpig Mode: ON ]
-   )   (      &gt; HPC Competitor
-  (_)-(_)     &gt; Cybersec Analyst
-</pre>
+            <span class="tag">Tennis</span>
+            <span class="tag">HPC competitor</span>
+            <span class="tag">7 languages</span>
+            <span class="tag">Cape Town</span>
+            <span class="tag">From Kimberley</span>
           </div>
         </div>
         <div class="about-side">
           <div class="about-card observe">
-            <div class="about-card-icon">🏆</div>
+            <div class="about-card-icon">01</div>
             <div>
-              <strong>2nd Place - CHPC Nationals</strong>
+              <strong>2nd place, CHPC Nationals</strong>
               <p>2025 Student Cluster Competition, 19th CHPC National Conference, Century City</p>
             </div>
           </div>
           <div class="about-card observe">
-            <div class="about-card-icon">🌐</div>
+            <div class="about-card-icon">02</div>
             <div>
-              <strong>ISC26 International Rep</strong>
-              <p>Selected for South Africa's team at ISC High Performance 2026, Hamburg</p>
+              <strong>ISC26 international rep</strong>
+              <p>Selected for South Africa's team at ISC High Performance 2026, Hamburg — placed 5th overall, 1st in Africa</p>
             </div>
           </div>
           <div class="about-card observe">
-            <div class="about-card-icon">🔑</div>
+            <div class="about-card-icon">03</div>
             <div>
-              <strong>Golden Key Society</strong>
-              <p>Top 15% of the CPUT Faculty of Engineering</p>
+              <strong>Golden Key International Honour Society</strong>
+              <p>Invited for ranking in the top 15% of the CPUT Faculty of Engineering</p>
             </div>
           </div>
           <div class="about-card observe">
-            <div class="about-card-icon">🛡</div>
+            <div class="about-card-icon">04</div>
             <div>
-              <strong>Cybersecurity Intern @ MWR Virtual Internship</strong>
-              <p>Penetration testing, Burp Suite and web application security</p>
+              <strong>Cybersecurity intern, MWR</strong>
+              <p>Virtual internship covering penetration testing, Burp Suite, and web application security</p>
             </div>
           </div>
         </div>
@@ -235,19 +165,20 @@
     <div class="container">
       <div class="section-label">skills</div>
       <h2 class="section-heading">What I bring<br /><em>to the table</em></h2>
+
       <div class="radar-wrap">
         <div class="radar-container">
           <canvas id="skillRadar"></canvas>
         </div>
         <div class="radar-legend">
-          <h3 class="radar-title">Expertise Radar</h3>
-          <p class="radar-sub">Character build — RPG edition</p>
+          <h3 class="radar-title">Core competencies</h3>
+          <p class="radar-sub">Self-assessed, weighted by hands-on hours</p>
           <div class="radar-stats">
             <div class="radar-stat-row"><span class="rs-label">Linux / Bash</span><span class="rs-bar"><span style="width:95%"></span></span><span class="rs-val">95</span></div>
-            <div class="radar-stat-row"><span class="rs-label">HPC Architecture</span><span class="rs-bar"><span style="width:90%"></span></span><span class="rs-val">90</span></div>
-            <div class="radar-stat-row"><span class="rs-label">Cybersecurity</span><span class="rs-bar"><span style="width:80%"></span></span><span class="rs-val">80</span></div>
-            <div class="radar-stat-row"><span class="rs-label">Cloud Infra</span><span class="rs-bar"><span style="width:78%"></span></span><span class="rs-val">78</span></div>
+            <div class="radar-stat-row"><span class="rs-label">HPC architecture</span><span class="rs-bar"><span style="width:90%"></span></span><span class="rs-val">90</span></div>
             <div class="radar-stat-row"><span class="rs-label">Programming</span><span class="rs-bar"><span style="width:85%"></span></span><span class="rs-val">85</span></div>
+            <div class="radar-stat-row"><span class="rs-label">Cybersecurity</span><span class="rs-bar"><span style="width:80%"></span></span><span class="rs-val">80</span></div>
+            <div class="radar-stat-row"><span class="rs-label">Cloud infra</span><span class="rs-bar"><span style="width:78%"></span></span><span class="rs-val">78</span></div>
             <div class="radar-stat-row"><span class="rs-label">Networking</span><span class="rs-bar"><span style="width:75%"></span></span><span class="rs-val">75</span></div>
           </div>
         </div>
@@ -255,24 +186,24 @@
 
       <div class="skills-grid">
         <div class="skill-group observe">
-          <h3 class="skill-group-title"><span class="skill-icon">⚡</span> High-Performance Computing</h3>
+          <h3 class="skill-group-title"><span class="skill-icon">01</span>High-performance computing</h3>
           <div class="skill-pills">
             <span data-tip="Ran HPL and HPCG benchmarks at national-level competitions">HPCC / HPCG / HPL</span>
-            <span data-tip="Compiled and tuned multi-node MPI jobs for cluster workloads">MPI (MPICH, IntelMPI)</span>
-            <span data-tip="ISC26 main role - running Synthetics on A100 GPUs">NVIDIA A100 Tuning</span>
-            <span data-tip="Managed scientific software stacks with Lmod on Rocky Linux clusters">Lmod Modules</span>
+            <span data-tip="Compiled and tuned multi-node MPI jobs for cluster workloads">MPI (MPICH, Intel MPI)</span>
+            <span data-tip="ISC26 main role — running synthetics on A100/H100 GPUs">A100 / H100 tuning</span>
+            <span data-tip="Managed scientific software stacks with Lmod on Rocky Linux clusters">Lmod modules</span>
             <span data-tip="Used BLIS for high-performance dense linear algebra">BLIS</span>
-            <span data-tip="Designed multi-node cluster layouts for competition environments">Cluster Architecture</span>
-            <span data-tip="CHPC Nationals app - quantum chemistry simulation">DFTB+</span>
-            <span data-tip="CHPC Nationals app - blood flow simulation on HPC clusters">HemePure</span>
-            <span data-tip="ISC26 primary role - synthetic benchmark suite optimisation">Synthetics (ISC26)</span>
+            <span data-tip="Designed multi-node cluster layouts for competition environments">Cluster architecture</span>
+            <span data-tip="CHPC Nationals app — quantum chemistry simulation">DFTB+</span>
+            <span data-tip="ISC26 app — blood flow simulation on HPC clusters">HemePure-GPU</span>
+            <span data-tip="ISC26 primary role — synthetic benchmark suite optimisation">Synthetics (ISC26)</span>
           </div>
         </div>
         <div class="skill-group observe">
-          <h3 class="skill-group-title"><span class="skill-icon">☁️</span> Cloud &amp; Infrastructure</h3>
+          <h3 class="skill-group-title"><span class="skill-icon">02</span>Cloud &amp; infrastructure</h3>
           <div class="skill-pills">
             <span data-tip="Provisioned cloud infra with Terraform for HPC deployments">Terraform</span>
-            <span data-tip="Automated cluster config and package deployment with Ansible">Ansible</span>
+            <span data-tip="Automated cluster config and package deployment">Ansible</span>
             <span data-tip="Worked with OpenStack APIs for compute resource orchestration">OpenStack</span>
             <span data-tip="Deployed compute nodes on IBM Cloud for CHPC Nationals">IBM Cloud</span>
             <span data-tip="Automated DigitalOcean compute nodes for HPC workloads">DigitalOcean</span>
@@ -280,29 +211,28 @@
           </div>
         </div>
         <div class="skill-group observe">
-          <h3 class="skill-group-title"><span class="skill-icon">🛡</span> Cybersecurity</h3>
+          <h3 class="skill-group-title"><span class="skill-icon">03</span>Cybersecurity</h3>
           <div class="skill-pills">
             <span data-tip="Used Burp Suite for web app security testing at MWR internship">Burp Suite</span>
-            <span data-tip="Conducted penetration tests on web applications and APIs">Penetration Testing</span>
-            <span data-tip="Tested and secured REST APIs against OWASP Top 10">Web App Security</span>
-            <span data-tip="Studied network protocols, firewalls, and intrusion detection">Network Security</span>
+            <span data-tip="Conducted penetration tests on web applications and APIs">Penetration testing</span>
+            <span data-tip="Tested and secured REST APIs against OWASP Top 10">Web app security</span>
+            <span data-tip="Studied network protocols, firewalls, and intrusion detection">Network security</span>
           </div>
         </div>
         <div class="skill-group observe">
-          <h3 class="skill-group-title"><span class="skill-icon">💻</span> Programming</h3>
+          <h3 class="skill-group-title"><span class="skill-icon">04</span>Programming</h3>
           <div class="skill-pills">
             <span data-tip="Primary language for scripting, ML, and data processing">Python</span>
             <span data-tip="Led a team project building a Java OOP collaborative app">Java</span>
             <span data-tip="Used for systems programming and performance-critical code">C / C++</span>
             <span data-tip="Built web apps and a raw WebGL game from scratch">JavaScript</span>
             <span data-tip="Daily driver for cluster automation and sysadmin scripting">Bash</span>
-            <span data-tip="Frontend development including this very portfolio">HTML/CSS</span>
             <span data-tip="Built a fully playable Tetris game using raw WebGL, no libraries">WebGL</span>
             <span data-tip="Database queries, schema design and data management">SQL</span>
           </div>
         </div>
         <div class="skill-group observe">
-          <h3 class="skill-group-title"><span class="skill-icon">📚</span> Final Year Modules</h3>
+          <h3 class="skill-group-title"><span class="skill-icon">05</span>Final-year modules</h3>
           <div class="skill-pills">
             <span>Network Systems 3</span>
             <span>Embedded Systems 3</span>
@@ -312,19 +242,12 @@
           </div>
         </div>
         <div class="skill-group observe">
-          <h3 class="skill-group-title"><span class="skill-icon">🔧</span> Tools &amp; OS</h3>
+          <h3 class="skill-group-title"><span class="skill-icon">06</span>Tools &amp; OS</h3>
           <div class="skill-pills">
-            <span data-tip="Primary OS - Rocky Linux daily driver, also Ubuntu and RHEL">Linux (Rocky, Ubuntu)</span>
+            <span data-tip="Primary OS — Rocky Linux daily driver, also Ubuntu and RHEL">Linux (Rocky, Ubuntu)</span>
             <span data-tip="Version control and collaborative development workflows">Git / GitHub</span>
-            <span data-tip="Development environment with custom terminal integration">VS Code</span>
             <span data-tip="Used for signal processing and comms engineering modules">MATLAB</span>
             <span data-tip="Electronic circuit simulation for Embedded Systems">Multisim</span>
-          </div>
-        </div>
-        <div class="skill-group vibes-group observe">
-          <h3 class="skill-group-title"><span class="skill-icon">✨</span> What Else I Bring</h3>
-          <div class="skill-pills">
-            <span data-tip="Unquantifiable. Unmatched. Simply present.">Vibes</span>
           </div>
         </div>
       </div>
@@ -340,19 +263,19 @@
       <div class="gallery-grid">
         <div class="gallery-item gallery-item--tall">
           <img src="csir_datacentre.jpeg" alt="Thabo at CSIR Lengau supercomputer" />
-          <div class="gallery-caption">Inside the CSIR Lengau supercomputer 🖥️</div>
+          <div class="gallery-caption">Inside the CSIR Lengau supercomputer</div>
         </div>
         <div class="gallery-item">
-          <img src="isc_team2.jpeg" alt="ISC26 South Africa team" />
-          <div class="gallery-caption">The ISC26 SA team - Hamburg bound 🇩🇪</div>
+          <img src="isc_team2.jpeg" alt="Team CHPC at ISC High Performance 2026, Hamburg" />
+          <div class="gallery-caption">Team CHPC on the Alster — ISC26 Hamburg</div>
         </div>
         <div class="gallery-item">
           <img src="isc_team1.jpeg" alt="ISC26 team having fun" />
-          <div class="gallery-caption">Team energy before ISC26 🤙</div>
+          <div class="gallery-caption">Team energy before ISC26</div>
         </div>
         <div class="gallery-item gallery-item--wide">
           <img src="hpc_club.jpeg" alt="CPUT HPC Club lesson" />
-          <div class="gallery-caption">HPC Club session @ CPUT - teaching the next cohort ⚡</div>
+          <div class="gallery-caption">HPC Club session @ CPUT — teaching the next cohort</div>
         </div>
       </div>
     </div>
@@ -363,77 +286,69 @@
     <div class="container">
       <div class="section-label">projects</div>
       <h2 class="section-heading">Things I've<br /><em>actually shipped</em></h2>
-      <!-- FEATURE 4: HOLOGRAM OVERLAY CANVAS -->
-      <div class="hologram-wrap">
-        <canvas class="hologram-canvas" id="hologramCanvas"></canvas>
-      </div>
       <div class="projects-grid">
         <a class="project-card featured observe" href="https://github.com/thabobosvark/DcSpears2025" target="_blank" rel="noopener">
-          <div class="project-tag">⚡ HPC - Featured</div>
-          <h3>DcSpears - CHPC Nationals Capstone</h3>
+          <div class="project-tag">HPC — Featured</div>
+          <h3>DcSpears — CHPC Nationals Capstone</h3>
           <p>Full cloud automation for multi-node HPC clusters on IBM Cloud and DigitalOcean. 2nd place nationally at the 2025 CHPC Student Cluster Competition.</p>
-          <div class="project-tech">
-            <span>OpenStack</span><span>IBM Cloud</span><span>Ansible</span><span>Bash</span>
-          </div>
+          <div class="project-tech"><span>OpenStack</span><span>IBM Cloud</span><span>Ansible</span><span>Bash</span></div>
           <div class="project-link">View on GitHub →</div>
         </a>
         <a class="project-card observe" href="https://github.com/thabobosvark/ibm-cloud-cluster-automation" target="_blank" rel="noopener">
-          <div class="project-tag">☁️ Cloud</div>
+          <div class="project-tag">Cloud</div>
           <h3>IBM Cloud Cluster Automation</h3>
-          <p>Automated deployment and configuration of HPC clusters on IBM Cloud with Terraform and Ansible pipelines. Built for CHPC Nationals.</p>
+          <p>Automated deployment and configuration of HPC clusters on IBM Cloud with Terraform and Ansible pipelines.</p>
           <div class="project-tech"><span>Terraform</span><span>Ansible</span><span>IBM Cloud</span></div>
           <div class="project-link">View on GitHub →</div>
         </a>
         <a class="project-card observe" href="https://github.com/thabobosvark/digital-ocean-deploy-compute-node" target="_blank" rel="noopener">
-          <div class="project-tag">☁️ Cloud</div>
+          <div class="project-tag">Cloud</div>
           <h3>DigitalOcean Compute Node Deploy</h3>
-          <p>Automated compute node deployment on DigitalOcean for HPC workloads, part of the CHPC Nationals cluster architecture toolkit.</p>
+          <p>Automated compute node deployment on DigitalOcean, part of the CHPC Nationals cluster architecture toolkit.</p>
           <div class="project-tech"><span>DigitalOcean</span><span>Bash</span><span>Python</span></div>
           <div class="project-link">View on GitHub →</div>
         </a>
         <a class="project-card observe" href="https://github.com/thabobosvark/Jotter" target="_blank" rel="noopener">
-          <div class="project-tag">💻 Software</div>
+          <div class="project-tag">Software</div>
           <h3>JotterApplication</h3>
-          <p>Collaborative notepad application - led as Team Leader. Designed for real-time shared note-taking with clean UX.</p>
+          <p>Collaborative notepad application — led as Team Leader. Real-time shared note-taking with clean UX.</p>
           <div class="project-tech"><span>Java</span><span>OOP</span><span>Git</span></div>
           <div class="project-link">View on GitHub →</div>
         </a>
-        <div class="project-card tetris-card observe">
-          <div class="project-tag">🎮 Game Dev - Live Demo</div>
+        <div class="project-card observe">
+          <div class="project-tag">Game Dev — Live demo</div>
           <h3>Tetris WebGL</h3>
-          <p>A fully playable browser-based Tetris game built from scratch with WebGL - no libraries, raw GPU rendering in the browser.</p>
+          <p>A fully playable browser-based Tetris game built from scratch with WebGL — no libraries, raw GPU rendering.</p>
           <div class="tetris-preview">
             <iframe src="https://tetrisbythabo.netlify.app/" title="Tetris WebGL Preview" scrolling="no" tabindex="-1"></iframe>
             <div class="tetris-overlay">
-              <a href="https://tetrisbythabo.netlify.app/" target="_blank" rel="noopener" class="play-tetris-btn">
-                <span class="play-icon">▶</span> Play Tetris
-              </a>
+              <a href="https://tetrisbythabo.netlify.app/" target="_blank" rel="noopener" class="play-tetris-btn">▶ Play Tetris</a>
             </div>
           </div>
           <div class="project-tech"><span>WebGL</span><span>JavaScript</span><span>HTML/CSS</span></div>
         </div>
-        <div class="project-card wip observe">
-          <div class="project-tag">🔬 Final Year Project</div>
+        <div class="project-card observe">
+          <div class="project-tag">Final-year project</div>
           <h3>NILM Device Identification System</h3>
-          <p>IoT smart plug (ESP32 + PZEM-004T) with MQTT/InfluxDB/Grafana stack and a Python ML classifier for non-intrusive load monitoring.</p>
+          <p>IoT smart plug (ESP32 + PZEM-004T) with an MQTT/InfluxDB/Grafana stack and a Python ML classifier for non-intrusive load monitoring.</p>
           <div class="project-tech"><span>Python</span><span>ESP32</span><span>MQTT</span><span>InfluxDB</span><span>Grafana</span></div>
-          <div class="project-link wip-label">🚧 In Progress</div>
+          <div class="project-link wip-label">In progress</div>
         </div>
-        <div class="project-card wip locked-card observe">
-          <div class="project-tag">🌤 Web App</div>
-          <div class="lock-badge">🔒 Private</div>
+        <div class="project-card observe">
+          <div class="lock-badge">Private</div>
+          <div class="project-tag">Web app</div>
           <h3>Weatherly</h3>
-          <p>A clean weather dashboard web app - real-time forecasts with a minimal, polished interface. Side project in active development.</p>
+          <p>A clean weather dashboard web app — real-time forecasts with a minimal, polished interface. Side project in active development.</p>
           <div class="project-tech"><span>JavaScript</span><span>HTML/CSS</span><span>Weather API</span></div>
-          <div class="project-link wip-label">🚧 In Progress</div>
+          <div class="project-link wip-label">In progress</div>
         </div>
-        <div class="project-card wip locked-card observe">
-          <div class="project-tag">✍️ Web App</div>
-          <div class="lock-badge">🔒 Private</div>
+        <div class="project-card observe">
+          <div class="lock-badge">Private</div>
+          <div class="project-tag">Web app</div>
           <h3>BlogForge</h3>
           <p>A Markdown-powered blog engine for simple, distraction-free publishing. Upcoming personal project.</p>
           <div class="project-tech"><span>JavaScript</span><span>Markdown</span><span>HTML/CSS</span></div>
-          <div class="project-link wip-label">🚧 In Progress</div>
+          <div class="project-link wip-label">In progress</div>
         </div>
       </div>
     </div>
@@ -446,46 +361,35 @@
       <h2 class="section-heading">Earned,<br /><em>every one</em></h2>
       <div class="certs-grid">
         <div class="cert-card observe">
-          <div class="cert-badge">🥈</div>
+          <div class="cert-badge">02</div>
           <div class="cert-body">
-            <h3>2nd Prize - 2025 CHPC Student Cluster Competition</h3>
+            <h3>2nd Prize — 2025 CHPC Student Cluster Competition</h3>
             <p>Awarded at the 19th Centre for High Performance Computing National Conference, Century City Conference Centre, Cape Town, 3 December 2025. Presented by NICIS and CSIR.</p>
-            <a href="cert_2nd_prize.pdf" target="_blank" class="cert-link">View Certificate →</a>
+            <a href="cert_2nd_prize.pdf" target="_blank" class="cert-link">View certificate →</a>
           </div>
         </div>
         <div class="cert-card observe">
-          <div class="cert-badge">🏅</div>
+          <div class="cert-badge">FN</div>
           <div class="cert-body">
-            <h3>National Round Finalist - 2025 CHPC Student Cluster Competition</h3>
+            <h3>National Round Finalist — 2025 CHPC Student Cluster Competition</h3>
             <p>Recognised for participation at the 2025 National CHPC Student Cluster Competition. Presented at the 19th CHPC National Conference, Cape Town.</p>
-            <a href="cert_finalist.pdf" target="_blank" class="cert-link">View Certificate →</a>
+            <a href="cert_finalist.pdf" target="_blank" class="cert-link">View certificate →</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       BLOG SECTION - Hamburg / Upcoming
-       ============================================================ -->
+  <!-- BLOG -->
   <section class="blog section" id="blog">
     <div class="container">
       <div class="section-label">blog</div>
       <h2 class="section-heading">From the<br /><em>field</em></h2>
       <div class="blog-grid">
 
-        <!-- HAMBURG POST - UPCOMING -->
-        <div class="blog-card blog-card--featured blog-card--upcoming observe">
-          <div class="blog-upcoming-badge">
-            <span class="blog-live-dot"></span>
-            Upcoming - Publishing from Hamburg
-          </div>
-          <div class="blog-card-img blog-card-img--placeholder">
-            <div class="blog-placeholder-inner">
-              <span class="blog-placeholder-flag">🇩🇪</span>
-              <span class="blog-placeholder-text">ISC26 Hamburg<br/>June 2026</span>
-              <div class="blog-placeholder-scan"></div>
-            </div>
+        <div class="blog-card blog-card--featured observe">
+          <div class="blog-card-img">
+            <img src="isc_team2.jpeg" alt="Team CHPC in Hamburg" />
           </div>
           <div class="blog-card-body">
             <div class="blog-meta">
@@ -494,53 +398,31 @@
             </div>
             <h3>Hamburg Dispatch: Pictures, People &amp; Petaflops</h3>
             <p>
-              Photos, videos, and real-time updates from the ISC High Performance 2026 conference in Hamburg, Germany.
-              What it's like competing internationally, the cluster setup, the team, and what we learned.
-              <em>Check back in June - this page will go live from Hamburg.</em>
+              Team CHPC placed 5th overall and 1st in Africa at ISC High Performance 2026. Notes from Hamburg on the cluster
+              setup, the 6 kW power cap, the HemePure-GPU debugging marathon, and what it's like representing South Africa
+              on an international stage.
             </p>
-            <div class="blog-upcoming-cta">
-              <span class="blog-countdown-inline" id="blogCountdown">Loading...</span>
-            </div>
+            <span class="blog-draft-note">Full write-up coming soon.</span>
           </div>
         </div>
 
-        <!-- PLACEHOLDER POST 2 -->
-        <div class="blog-card blog-card--upcoming observe">
-          <div class="blog-upcoming-badge small">🚧 Drafting</div>
-          <div class="blog-card-img blog-card-img--placeholder dark">
-            <div class="blog-placeholder-inner">
-              <span class="blog-placeholder-flag">🖥️</span>
-              <span class="blog-placeholder-text">CHPC 2025<br/>Reflections</span>
-            </div>
-          </div>
+        <div class="blog-card observe">
+          <div class="blog-card-img"><img src="hpc_club.jpeg" alt="CHPC Nationals" /></div>
           <div class="blog-card-body">
-            <div class="blog-meta">
-              <span class="blog-tag">HPC</span>
-              <span class="blog-date">Coming Soon</span>
-            </div>
+            <div class="blog-meta"><span class="blog-tag">HPC</span><span class="blog-date">Coming soon</span></div>
             <h3>What It Takes to Place 2nd at CHPC Nationals</h3>
             <p>The full story behind DcSpears, the cluster architecture, the benchmarks, and the moment we found out we came second.</p>
-            <span class="blog-draft-note">Upcoming post...</span>
+            <span class="blog-draft-note">Drafting...</span>
           </div>
         </div>
 
-        <!-- PLACEHOLDER POST 3 -->
-        <div class="blog-card blog-card--upcoming observe">
-          <div class="blog-upcoming-badge small">🚧 Drafting</div>
-          <div class="blog-card-img blog-card-img--placeholder dark">
-            <div class="blog-placeholder-inner">
-              <span class="blog-placeholder-flag">🛡</span>
-              <span class="blog-placeholder-text">MWR Internship<br/>Learnings</span>
-            </div>
-          </div>
+        <div class="blog-card observe">
+          <div class="blog-card-img"><img src="csir_datacentre.jpeg" alt="MWR internship" /></div>
           <div class="blog-card-body">
-            <div class="blog-meta">
-              <span class="blog-tag">Cybersecurity</span>
-              <span class="blog-date">Coming Soon</span>
-            </div>
+            <div class="blog-meta"><span class="blog-tag">Cybersecurity</span><span class="blog-date">Coming soon</span></div>
             <h3>Breaking Into Cybersec: My MWR Virtual Internship</h3>
             <p>What penetration testing actually looks like, what Burp Suite taught me, and how I'm thinking about security differently now.</p>
-            <span class="blog-draft-note">Upcoming post...</span>
+            <span class="blog-draft-note">Drafting...</span>
           </div>
         </div>
 
@@ -551,28 +433,19 @@
   <!-- CONTACT -->
   <section class="contact section" id="contact">
     <div class="container">
-      <div class="section-label">contact</div>
       <div class="contact-inner">
+        <div class="section-label">contact</div>
         <h2 class="section-heading">Let's build<br /><em>something real</em></h2>
         <p class="contact-sub">
           Whether it's an internship, HPC collaboration, a cybersec conversation, or just a hello
-          from a fellow engineer - my inbox is always open.
+          from a fellow engineer — my inbox is always open.
         </p>
         <div class="contact-links">
-          <a href="mailto:thabobosvark@icloud.com" class="contact-link">
-            <span class="contact-link-icon">✉</span>
-            thabobosvark@icloud.com
-          </a>
-          <a href="https://github.com/thabobosvark" target="_blank" rel="noopener" class="contact-link">
-            <span class="contact-link-icon">⌥</span>
-            github.com/thabobosvark
-          </a>
-          <a href="tel:+27682831900" class="contact-link">
-            <span class="contact-link-icon">📞</span>
-            068 283 1900
-          </a>
+          <a href="mailto:thabobosvark@icloud.com" class="contact-link"><span class="contact-link-icon">→</span>thabobosvark@icloud.com</a>
+          <a href="https://github.com/thabobosvark" target="_blank" rel="noopener" class="contact-link"><span class="contact-link-icon">→</span>github.com/thabobosvark</a>
+          <a href="tel:+27682831900" class="contact-link"><span class="contact-link-icon">→</span>068 283 1900</a>
         </div>
-        <p class="contact-note">Based in Cape Town - open to remote and relocation</p>
+        <p class="contact-note">Based in Cape Town — open to remote and relocation</p>
       </div>
     </div>
   </section>
@@ -580,670 +453,165 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-ascii">
-<pre class="footer-bosvark">
-  /\   /\
- (  · ·  )  K.T. BOSVARK
- =( ^ )=    Built with terminals &amp; ambition
-   ) · (
-  (_)-(_)
-</pre>
-      </div>
-      <p>© 2026 Khuphuka Thabo Bosvark - Final-year Computer Engineering Student</p>
+      <p>© 2026 Khuphuka Thabo Bosvark — Final-year Computer Engineering Student</p>
       <p class="footer-sub">Built with HTML, CSS and ambition. Deployed on Netlify.</p>
     </div>
   </footer>
 
   <script>
-
-  // ==============================
-  // LEVEL 3: CONSOLE BRAND MESSAGE
-  // Appears when devtools console is opened
-  // ==============================
-  console.log(
-    "%c⚠ TERMINAL SECURITY OVERRIDE",
-    "color: #ff3333; font-size: 36px; font-weight: 900; text-shadow: 2px 2px #000; font-family: monospace;"
-  );
-  console.log(
-    "%c[ BOSVARK-SEC ] Unauthorised access attempt logged.",
-    "color: #ff6b35; font-size: 14px; font-family: monospace;"
-  );
-  console.log(
-    "%cThis terminal is monitored. If you are a developer or recruiter who found a vulnerability, I want to hear from you:\n  thabobosvark@icloud.com\n  github.com/thabobosvark",
-    "color: #8a7a7a; font-size: 13px; font-family: monospace; line-height: 1.8;"
-  );
-  console.log(
-    "%c-- Thabo Bosvark | Aspiring Cybersecurity Analyst | ISC26 Hamburg",
-    "color: #e02020; font-size: 11px; font-family: monospace; font-style: italic;"
-  );
-
-  // ==============================
-  // LEVEL 1: DISABLE RIGHT-CLICK & KEYBOARD SHORTCUTS
-  // Stops 90% of casual users
-  // ==============================
-  document.addEventListener('contextmenu', (e) => {
-    e.preventDefault();
-    // Flash a subtle red border on the body briefly
-    document.body.style.outline = '2px solid #e02020';
-    document.body.style.outlineOffset = '-2px';
-    setTimeout(() => {
-      document.body.style.outline = '';
-      document.body.style.outlineOffset = '';
-    }, 600);
-  });
-
-  document.addEventListener('keydown', (e) => {
-    const blocked =
-      e.key === "F12" ||
-      (e.ctrlKey && e.shiftKey && ['I','i','J','j','C','c','K','k'].includes(e.key)) ||
-      (e.ctrlKey && ['U','u','S','s'].includes(e.key));
-
-    if (blocked) {
-      e.preventDefault();
-      e.stopPropagation();
-      // Terminal-style alert injected into the page instead of browser alert
-      const alertEl = document.createElement('div');
-      alertEl.style.cssText = [
-        'position:fixed','top:50%','left:50%',
-        'transform:translate(-50%,-50%)',
-        'background:#0a0000','border:1px solid #e02020',
-        'border-radius:10px','padding:1.5rem 2rem',
-        'font-family:DM Mono,monospace','font-size:0.85rem',
-        'color:#ff3333','z-index:99999','text-align:center',
-        'box-shadow:0 0 40px rgba(224,32,32,0.4)',
-        'animation:sshFadeIn 0.2s ease forwards',
-        'max-width:360px','width:90vw'
-      ].join(';');
-      alertEl.innerHTML = `
-        <div style="font-size:1.1rem;font-weight:700;margin-bottom:0.5rem">
-          &#x26A0; TERMINAL SECURITY OVERRIDE
-        </div>
-        <div style="color:#8a7a7a;font-size:0.78rem;line-height:1.7">
-          Inspect access denied.<br/>
-          <span style="color:#e02020">bosvark-sec-scanner v1.0</span>
-        </div>`;
-      document.body.appendChild(alertEl);
-      setTimeout(() => alertEl.remove(), 2200);
-      return false;
-    }
-  });
-
-  // ==============================
-  // LEVEL 2: DEBUGGER TRAP
-  // Freezes DevTools panel in an infinite loop
-  // Only fires when DevTools is actually open
-  // ==============================
-  (function _devtoolsTrap() {
-    let devOpen = false;
-    const threshold = 160;
-
-    setInterval(() => {
-      const start = performance.now();
-      // The debugger statement only takes time when DevTools is open
-      // eslint-disable-next-line no-debugger
-      debugger;
-      const elapsed = performance.now() - start;
-      if (elapsed > threshold && !devOpen) {
-        devOpen = true;
-        // When DevTools detected: fire the console brand, glitch the title
-        const title = document.querySelector('.game-title, .hero-name');
-        if (title) {
-          title.style.transition = 'filter 0.1s';
-          title.style.filter = 'hue-rotate(180deg) brightness(1.5)';
-          setTimeout(() => { title.style.filter = ''; }, 400);
-        }
-      } else if (elapsed <= threshold) {
-        devOpen = false;
-      }
-    }, 1000);
-  })();
-
-  // ==============================
-  // FEATURE 3: SSH LOADER
-  // ==============================
-  (function() {
-    const loader = document.getElementById('sshLoader');
-    const linesEl = document.getElementById('sshLines');
-    const lines = [
-      { text: '> SSH_CONNECT: thabo@capetown.za...', delay: 0, cls: 'ssh-neutral' },
-      { text: '> AUTH_KEY: ████████████ CHECKING...', delay: 300, cls: 'ssh-warn' },
-      { text: '> AUTH_KEY: SUCCESS ✓', delay: 800, cls: 'ssh-ok' },
-      { text: '> FETCHING_RESOURCES: [          ] 0%', delay: 1100, cls: 'ssh-neutral', progress: true },
-      { text: '> LOCALIZING_FOR_HAMBURG_ISC26...', delay: 2400, cls: 'ssh-accent' },
-      { text: '> DECRYPTING_PORTFOLIO_GUI...', delay: 2900, cls: 'ssh-warn' },
-      { text: '> MOUNT: /portfolio/thabo-bosvark - OK', delay: 3300, cls: 'ssh-ok' },
-      { text: '> BOOT_SEQUENCE: COMPLETE ✓', delay: 3700, cls: 'ssh-ok' },
-    ];
-
-    function addLine(text, cls) {
-      const d = document.createElement('div');
-      d.className = 'ssh-line ' + cls;
-      d.textContent = text;
-      linesEl.appendChild(d);
-      linesEl.scrollTop = linesEl.scrollHeight;
-    }
-
-    lines.forEach(l => {
-      setTimeout(() => {
-        if (l.progress) {
-          // animate loading bar
-          addLine(l.text, l.cls);
-          let pct = 0;
-          const bar = linesEl.lastChild;
-          const iv = setInterval(() => {
-            pct += 8;
-            const filled = Math.floor(pct / 10);
-            bar.textContent = '> FETCHING_RESOURCES: [' + '█'.repeat(filled) + ' '.repeat(10 - filled) + '] ' + Math.min(pct, 100) + '%';
-            if (pct >= 100) clearInterval(iv);
-          }, 80);
-        } else {
-          addLine(l.text, l.cls);
-        }
-      }, l.delay);
+  // scroll progress + nav shadow
+  (function(){
+    const bar = document.getElementById('scrollProgress');
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const pct = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+      bar.style.width = pct + '%';
+      nav.classList.toggle('scrolled', h.scrollTop > 20);
     });
-
-    setTimeout(() => {
-      loader.classList.add('ssh-exit');
-      setTimeout(() => loader.style.display = 'none', 700);
-    }, 4300);
   })();
 
-  // ==============================
-  // CUSTOM CURSOR
-  // ==============================
-  const cursor = document.getElementById('cursor');
-  document.addEventListener('mousemove', e => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-  });
-  document.addEventListener('mousedown', () => cursor.classList.add('cursor-click'));
-  document.addEventListener('mouseup', () => cursor.classList.remove('cursor-click'));
-  document.querySelectorAll('a, button, input, .skill-pills span').forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('cursor-hover'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-hover'));
-  });
+  // reveal on scroll
+  (function(){
+    const els = document.querySelectorAll('.observe');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+    }, { threshold: 0.15 });
+    els.forEach(el => io.observe(el));
+  })();
 
-  // ==============================
-  // SCROLL PROGRESS
-  // ==============================
-  const scrollProgress = document.getElementById('scrollProgress');
-  window.addEventListener('scroll', () => {
-    const total = document.documentElement.scrollHeight - window.innerHeight;
-    scrollProgress.style.width = (window.scrollY / total * 100) + '%';
-  });
-
-  // ==============================
-  // NAV
-  // ==============================
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => nav.classList.toggle('nav-scrolled', window.scrollY > 60));
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.querySelector('.nav-links');
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    hamburger.classList.toggle('active');
-  });
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => navLinks.classList.remove('open'));
-  });
-
-  // ==============================
-  // SECTION OBSERVER
-  // ==============================
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.skill-group, .project-card, .about-card, .cert-card, .blog-card, .observe').forEach(el => {
-    el.classList.add('observe');
-    observer.observe(el);
-  });
-
-  const sections = document.querySelectorAll('section[id]');
-  const navAnchors = document.querySelectorAll('.nav-links a');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
-    navAnchors.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
-  });
-
-  // ==============================
-  // INTERACTIVE TERMINAL
-  // ==============================
-  const termInput = document.getElementById('termInput');
-  const termOutput = document.getElementById('termOutput');
-  const termCmd = document.getElementById('termCmd');
-  const termCursor = document.getElementById('termCursor');
-
-  const commands = {
-    help: `<span class="to-acc">Available commands:</span>
-  <span class="to-cmd">about</span>          - who is Thabo?
-  <span class="to-cmd">skills</span>         - tech stack & expertise
-  <span class="to-cmd">status</span>         - current activity
-  <span class="to-cmd">contact</span>        - get in touch
-  <span class="to-cmd">whois thabo</span>    - full profile
-  <span class="to-cmd">cat bosvark.txt</span> - important file
-  <span class="to-cmd">clear</span>          - clear terminal`,
-    about: `<span class="to-acc">Thabo Bosvark</span> - Aspiring Cybersecurity Analyst & HPC Enthusiast
-<span class="to-muted">Final-year Computer Engineering @ CPUT</span>
-<span class="to-muted">ISC26 Hamburg Rep - 2nd CHPC Nationals - Golden Key Society</span>
-<span class="to-muted">From Kimberley, based in Cape Town</span>`,
-    skills: `<span class="to-acc">Core stack:</span>
-  <span class="to-cmd">HPC</span>      HPL, MPI, DFTB+, HemePure, Synthetics, A100
-  <span class="to-cmd">Cloud</span>    IBM Cloud, DigitalOcean, Terraform, Ansible
-  <span class="to-cmd">CyberSec</span> Burp Suite, Penetration Testing, Web App Security
-  <span class="to-cmd">Code</span>     Python, C/C++, Java, Bash, JavaScript, SQL, WebGL
-  <span class="to-cmd">OS</span>       Rocky Linux - daily driver`,
-    status: `<span class="to-acc">Current status:</span>
-  <span class="to-cmd">[ACTIVE]</span>  Final Year Project - NILM System (ESP32 + ML)
-  <span class="to-cmd">[ACTIVE]</span>  Preparing for ISC26 Hamburg 🇩🇪
-  <span class="to-cmd">[OPEN]</span>    Internships & Opportunities
-  <span class="to-muted">Uptime: final semester. Zero errors expected.</span>`,
-    contact: `<span class="to-acc">Reach me at:</span>
-  <span class="to-cmd">Email</span>   thabobosvark@icloud.com
-  <span class="to-cmd">GitHub</span>  github.com/thabobosvark
-  <span class="to-cmd">Phone</span>   068 283 1900`,
-    'whois thabo': `<span class="to-acc">$ whois thabo</span>
-<span class="to-muted">Name:</span>         Khuphuka Thabo Bosvark
-<span class="to-muted">Role:</span>         Aspiring Cybersecurity Analyst & HPC Enthusiast
-<span class="to-muted">Degree:</span>       BEng Technology - Computer Engineering, CPUT
-<span class="to-muted">Achievements:</span> 2nd CHPC Nationals, ISC26 Rep, Golden Key
-<span class="to-muted">Languages:</span>    English, Tswana, Zulu, Xhosa, Afrikaans, Sotho, Sepedi
-<span class="to-muted">Kernel:</span>       Rocky Linux - daily driver
-<span class="to-muted">ISC26 role:</span>   Synthetics (Main), DFTB+ (Secondary)
-<span class="to-muted">Interests:</span>    HPC, Cybersec, Cloud, Tennis`,
-    'cat bosvark.txt': `<span class="to-acc">  /\\   /\\</span>
-<span class="to-acc"> (  o o  )   B O S V A R K</span>
-<span class="to-acc"> =( Y )=     [ Bushpig Mode: ON ]</span>
-<span class="to-acc">   )   (      > HPC Competitor</span>
-<span class="to-acc">  (_)-(_)     > Cybersec Analyst</span>
-<span class="to-muted">"Built different. Literally." -- /etc/bosvark.conf</span>`,
-  };
-
-  const introText = "help";
-  let i = 0;
-  function typeIntro() {
-    if (i < introText.length) { termCmd.textContent += introText[i++]; setTimeout(typeIntro, 80); }
-    else { setTimeout(() => { appendOutput('help', commands['help']); termCmd.textContent = ''; }, 400); }
-  }
-  setTimeout(typeIntro, 4800); // after SSH loader
-
-  function appendOutput(cmd, output) {
-    const entry = document.createElement('div');
-    entry.classList.add('term-entry');
-    entry.innerHTML = `<div class="te-cmd"><span class="term-prompt">guest@bosvark:~$</span> ${cmd}</div><div class="te-out">${output}</div>`;
-    termOutput.appendChild(entry);
-    termOutput.scrollTop = termOutput.scrollHeight;
-  }
-
-  termInput.addEventListener('keydown', e => {
-    if (e.key === 'Enter') {
-      const val = termInput.value.trim().toLowerCase();
-      termInput.value = '';
-      if (!val) return;
-      if (val === 'clear') { termOutput.innerHTML = ''; return; }
-      const out = commands[val] || `<span class="to-err">Command not found: ${val}</span>\n<span class="to-muted">Type <span class="to-cmd">help</span> for available commands.</span>`;
-      appendOutput(val, out);
+  // hero terminal boot sequence + interactive input
+  (function(){
+    const cmd = document.getElementById('termCmd');
+    const output = document.getElementById('termOutput');
+    const input = document.getElementById('termInput');
+    const bootCmd = 'whoami';
+    let i = 0;
+    function type(){
+      if (i <= bootCmd.length){ cmd.textContent = bootCmd.slice(0, i); i++; setTimeout(type, 80); }
+      else { showOutput('whoami'); }
     }
-  });
-  setInterval(() => termCursor.style.opacity = termCursor.style.opacity === '0' ? '1' : '0', 530);
-
-  // ==============================
-  // HAMBURG COUNTDOWN
-  // ==============================
-  const ISC_DATE = new Date('2026-06-19T00:00:00');
-  function updateCountdown() {
-    const diff = ISC_DATE - new Date();
-    const heading = document.getElementById('countdownHeading');
-    const units = document.getElementById('countdownUnits');
-    const banner = document.getElementById('countdownBanner');
-    if (diff > 0) {
-      const d = Math.floor(diff / 86400000);
-      const h = Math.floor((diff % 86400000) / 3600000);
-      const m = Math.floor((diff % 3600000) / 60000);
-      const s = Math.floor((diff % 60000) / 1000);
-      document.getElementById('cdDays').textContent = String(d).padStart(2,'0');
-      document.getElementById('cdHours').textContent = String(h).padStart(2,'0');
-      document.getElementById('cdMins').textContent = String(m).padStart(2,'0');
-      document.getElementById('cdSecs').textContent = String(s).padStart(2,'0');
-      // blog countdown
-      const bc = document.getElementById('blogCountdown');
-      if (bc) bc.textContent = d + 'd ' + h + 'h ' + m + 'm until Hamburg';
-    } else {
-      const daysPast = Math.floor(Math.abs(diff) / 86400000);
-      heading.textContent = 'Days Since ISC26 Germany - Iconic Moments';
-      units.innerHTML = `<div class="countdown-unit post-isc"><span class="cu-num">${daysPast}</span><span class="cu-label">Days Past 🇩🇪</span></div>`;
-      banner.classList.add('post-isc-mode');
-      const bc = document.getElementById('blogCountdown');
-      if (bc) bc.textContent = 'ISC26 Complete - Read the recap below';
+    const responses = {
+      whoami: 'khuphuka_thabo_bosvark\nfinal-year computer engineer @ cput\nteam chpc — isc26 hamburg',
+      skills: 'hpc · cloud infra · cybersecurity\npython · c/c++ · bash · javascript',
+      contact: 'email: thabobosvark@icloud.com\ngithub: github.com/thabobosvark',
+      status: 'distinctions: 12/14\nisc26: 5th overall, 1st in africa\nchpc nationals: 2nd place',
+      help: 'try: whoami, skills, contact, status'
+    };
+    function showOutput(key){
+      const text = responses[key] || `command not found: ${key}\ntry: help`;
+      output.textContent = text;
     }
-  }
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
+    type();
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter'){
+        const val = input.value.trim().toLowerCase();
+        if (val){ cmd.textContent = val; showOutput(val); input.value = ''; }
+      }
+    });
+  })();
 
-  // ==============================
-  // SKILL TOOLTIPS
-  // ==============================
-  const tooltip = document.getElementById('skillTooltip');
-  document.querySelectorAll('.skill-pills span[data-tip]').forEach(span => {
-    span.addEventListener('mouseenter', e => { tooltip.textContent = span.dataset.tip; tooltip.classList.add('visible'); });
-    span.addEventListener('mousemove', e => { tooltip.style.left = (e.clientX + 16) + 'px'; tooltip.style.top = (e.clientY - 12) + 'px'; });
-    span.addEventListener('mouseleave', () => tooltip.classList.remove('visible'));
-  });
+  // skill pill tooltips
+  (function(){
+    const tooltip = document.getElementById('skillTooltip');
+    document.querySelectorAll('.skill-pills span[data-tip]').forEach(pill => {
+      pill.addEventListener('mouseenter', (e) => {
+        tooltip.textContent = pill.getAttribute('data-tip');
+        tooltip.classList.add('show');
+      });
+      pill.addEventListener('mousemove', (e) => {
+        tooltip.style.left = (e.clientX + 14) + 'px';
+        tooltip.style.top = (e.clientY + 14) + 'px';
+      });
+      pill.addEventListener('mouseleave', () => tooltip.classList.remove('show'));
+    });
+  })();
 
-  // ==============================
-  // RADAR CHART
-  // ==============================
-  window.addEventListener('load', () => {
-    const ctx = document.getElementById('skillRadar').getContext('2d');
+  // skill radar chart
+  (function(){
+    const ctx = document.getElementById('skillRadar');
+    if (!ctx || typeof Chart === 'undefined') return;
     new Chart(ctx, {
       type: 'radar',
       data: {
-        labels: ['Linux / Bash', 'HPC Architecture', 'Cybersecurity', 'Cloud Infra', 'Programming', 'Networking'],
-        datasets: [{ label: 'Expertise', data: [95, 90, 80, 78, 85, 75],
-          backgroundColor: 'rgba(224,32,32,0.15)', borderColor: '#e02020', borderWidth: 2,
-          pointBackgroundColor: '#ff3333', pointBorderColor: '#e02020', pointRadius: 5, pointHoverRadius: 7 }]
+        labels: ['Linux/Bash','HPC Arch.','Programming','Cybersecurity','Cloud Infra','Networking'],
+        datasets: [{
+          data: [95,90,85,80,78,75],
+          backgroundColor: 'rgba(232,161,58,0.15)',
+          borderColor: '#e8a13a',
+          pointBackgroundColor: '#57c7b8',
+          borderWidth: 2
+        }]
       },
       options: {
-        responsive: true, maintainAspectRatio: true,
-        scales: { r: { min: 0, max: 100, ticks: { display: false, stepSize: 20 },
-          grid: { color: 'rgba(220,40,40,0.15)' }, angleLines: { color: 'rgba(220,40,40,0.2)' },
-          pointLabels: { color: '#e88', font: { family: 'DM Mono', size: 11 } } } },
-        plugins: { legend: { display: false }, tooltip: {
-          backgroundColor: '#1a0a0a', borderColor: '#e02020', borderWidth: 1,
-          titleColor: '#e88', bodyColor: '#f0eaea',
-          callbacks: { label: ctx => ' ' + ctx.raw + ' / 100' } } }
-      }
-    });
-  });
-
-  // ==============================
-  // FEATURE 1: VULNERABILITY SCANNER
-  // ==============================
-  const vulnOverlay = document.getElementById('vulnOverlay');
-  const vulnBody = document.getElementById('vulnBody');
-  const vulnPayoff = document.getElementById('vulnPayoff');
-  const vulnClose = document.getElementById('vulnClose');
-  const scanLine = document.getElementById('scanLine');
-  const navScanBtn = document.getElementById('navScanBtn');
-
-  const scanChecks = [
-    { delay: 200,  cls: 'vi-info', text: '[INFO] Initialising Bosvark Security Scanner...' },
-    { delay: 600,  cls: 'vi-info', text: '[INFO] Detecting Browser: ' + (navigator.userAgent.includes('Chrome') ? 'Chrome' : navigator.userAgent.includes('Firefox') ? 'Firefox' : 'Unknown') },
-    { delay: 1100, cls: 'vi-info', text: '[INFO] Checking TLS/SSL certificate on this page...' },
-    { delay: 1600, cls: 'vi-ok',   text: '[SUCCESS] TLS 1.3 Detected - Connection: Encrypted ✓' },
-    { delay: 2100, cls: 'vi-warn', text: '[SCAN] Checking for open ports on your device...' },
-    { delay: 2700, cls: 'vi-ok',   text: '[SUCCESS] Open ports detected: NONE ✓' },
-    { delay: 3100, cls: 'vi-info', text: '[INFO] Checking HTTP headers for security misconfigs...' },
-    { delay: 3600, cls: 'vi-ok',   text: '[SUCCESS] X-Content-Type-Options: nosniff ✓' },
-    { delay: 4000, cls: 'vi-warn', text: '[WARN] Checking JavaScript injection vectors...' },
-    { delay: 4500, cls: 'vi-ok',   text: '[SUCCESS] No XSS vectors found ✓' },
-    { delay: 5000, cls: 'vi-info', text: '[INFO] Checking HTTPS redirect policy...' },
-    { delay: 5400, cls: 'vi-ok',   text: '[SUCCESS] HSTS enforced - Strict Transport Security ✓' },
-    { delay: 5900, cls: 'vi-ok',   text: '[SUCCESS] Thabo\'s Site Connection: Encrypted ✓' },
-    { delay: 6400, cls: 'vi-ok',   text: '[SUCCESS] All systems nominal. You are secure.' },
-  ];
-
-  function runScanner() {
-    vulnOverlay.classList.add('active');
-    vulnBody.innerHTML = '';
-    vulnPayoff.style.display = 'none';
-    scanLine.style.animation = 'none';
-    scanLine.offsetHeight; // reflow
-    scanLine.style.animation = '';
-
-    scanChecks.forEach(c => {
-      setTimeout(() => {
-        const line = document.createElement('div');
-        line.className = 'vi-line ' + c.cls;
-        line.textContent = c.text;
-        vulnBody.appendChild(line);
-        vulnBody.scrollTop = vulnBody.scrollHeight;
-      }, c.delay);
-    });
-
-    setTimeout(() => {
-      vulnPayoff.style.display = 'flex';
-    }, 7000);
-  }
-
-  navScanBtn.addEventListener('click', runScanner);
-  vulnClose.addEventListener('click', () => vulnOverlay.classList.remove('active'));
-  document.getElementById('vulnCTA').addEventListener('click', () => {
-    vulnOverlay.classList.remove('active');
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-  });
-
-  // ==============================
-  // FEATURE 2: HPC NODE GRID + GIGAFLOPS
-  // ==============================
-  (function() {
-    const canvas = document.getElementById('nodeCanvas');
-    const ctx = canvas.getContext('2d');
-    const COLS = 28, ROWS = 16;
-    const NODE_SIZE = 6, GAP = 14;
-    let mouseX = -999, mouseY = -999;
-    let scrollSpeed = 0, lastScrollY = 0;
-    let lastTime = 0;
-
-    function resize() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-    resize();
-    window.addEventListener('resize', resize);
-
-    document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
-    window.addEventListener('scroll', () => {
-      const now = Date.now();
-      scrollSpeed = Math.abs(window.scrollY - lastScrollY) / Math.max(1, now - lastTime) * 100;
-      lastScrollY = window.scrollY;
-      lastTime = now;
-    });
-
-    function lerp(a, b, t) { return a + (b - a) * t; }
-
-    function draw(ts) {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      const startX = (canvas.width - (COLS * GAP)) / 2;
-      const startY = (canvas.height - (ROWS * GAP)) / 2;
-      let activeNodes = 0;
-      let totalLoad = 0;
-
-      for (let r = 0; r < ROWS; r++) {
-        for (let c = 0; c < COLS; c++) {
-          const nx = startX + c * GAP;
-          const ny = startY + r * GAP;
-          const dist = Math.sqrt((mouseX - nx) ** 2 + (mouseY - ny) ** 2);
-          const proximity = Math.max(0, 1 - dist / 180);
-          const load = proximity;
-          totalLoad += load;
-          if (load > 0.05) activeNodes++;
-
-          // color: dark red at low load, bright red at high
-          const r_ = Math.floor(lerp(30, 255, load));
-          const g_ = Math.floor(lerp(8, 40, load));
-          const b_ = Math.floor(lerp(8, 30, load));
-          const alpha = lerp(0.15, 0.9, load);
-          ctx.fillStyle = `rgba(${r_},${g_},${b_},${alpha})`;
-
-          const size = NODE_SIZE * lerp(0.5, 1.4, load);
-          ctx.beginPath();
-          ctx.arc(nx, ny, size / 2, 0, Math.PI * 2);
-          ctx.fill();
-
-          // draw connection lines to nearby active nodes
-          if (load > 0.3 && c < COLS - 1) {
-            const nx2 = startX + (c+1) * GAP;
-            const ny2 = startY + r * GAP;
-            ctx.strokeStyle = `rgba(220,40,40,${load * 0.25})`;
-            ctx.lineWidth = 0.5;
-            ctx.beginPath();
-            ctx.moveTo(nx, ny);
-            ctx.lineTo(nx2, ny2);
-            ctx.stroke();
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          r: {
+            angleLines: { color: 'rgba(237,235,227,0.09)' },
+            grid: { color: 'rgba(237,235,227,0.09)' },
+            pointLabels: { color: '#a3a099', font: { family: 'DM Mono', size: 11 } },
+            ticks: { display: false, backdropColor: 'transparent' },
+            suggestedMin: 0, suggestedMax: 100
           }
         }
       }
-
-      // Update dashboard
-      const avgLoad = (totalLoad / (COLS * ROWS)) * 100;
-      const gflops = (scrollSpeed * 0.3 + avgLoad * 0.8).toFixed(2);
-      document.getElementById('flopsVal').textContent = gflops;
-      document.getElementById('nodesVal').textContent = activeNodes;
-      document.getElementById('loadVal').textContent = avgLoad.toFixed(1) + '%';
-      document.getElementById('flopsBar').style.width = Math.min(avgLoad * 2, 100) + '%';
-
-      scrollSpeed *= 0.92;
-      requestAnimationFrame(draw);
-    }
-    requestAnimationFrame(draw);
+    });
   })();
 
-  // ==============================
-  // FEATURE 4: CODE HOLOGRAM OVERLAYS
-  // ==============================
-  (function() {
-    const canvas = document.getElementById('hologramCanvas');
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-
-    const codeSnippets = [
-      '- name: deploy_cluster',
-      '  hosts: compute_nodes',
-      '  vars:',
-      '    mpi_version: 4.1.2',
-      '  tasks:',
-      '  - name: Install OpenMPI',
-      '    yum: name=openmpi',
-      'module load openmpi/4.1.2',
-      'mpirun -np 128 ./hpl',
-      'export OMP_NUM_THREADS=32',
-      'terraform apply -auto-approve',
-      'ansible-playbook site.yml',
-      'ssh thabo@cluster-node-01',
-      'squeue -u tbosvark',
-      'sbatch run_hpcg.sh',
-      '#SBATCH --nodes=4',
-      '#SBATCH --ntasks-per-node=32',
-      'module load intel-mpi',
-      'ulimit -s unlimited',
-      'numactl --membind=0 ./xhpl',
-    ];
-
-    const particles = Array.from({length: 14}, (_, i) => ({
-      x: Math.random(),
-      y: Math.random(),
-      speed: 0.0002 + Math.random() * 0.0003,
-      text: codeSnippets[i % codeSnippets.length],
-      opacity: 0.04 + Math.random() * 0.06,
-      size: 9 + Math.random() * 4,
-      drift: (Math.random() - 0.5) * 0.0001,
-    }));
-
-    function resize() {
-      const wrap = canvas.parentElement;
-      canvas.width = wrap.offsetWidth;
-      canvas.height = wrap.offsetHeight;
-    }
-    resize();
-    window.addEventListener('resize', resize);
-
-    function draw() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.font = `${10}px 'DM Mono', monospace`;
-
-      particles.forEach(p => {
-        p.y -= p.speed;
-        p.x += p.drift;
-        if (p.y < -0.05) { p.y = 1.05; p.x = Math.random(); }
-        if (p.x < 0 || p.x > 1) p.drift *= -1;
-
-        ctx.save();
-        ctx.globalAlpha = p.opacity;
-        ctx.fillStyle = '#ff4444';
-        ctx.font = `${p.size}px 'DM Mono', monospace`;
-        ctx.fillText(p.text, p.x * canvas.width, p.y * canvas.height);
-        ctx.restore();
-      });
-
-      requestAnimationFrame(draw);
-    }
-    draw();
-  })();
-
-  // ==============================
-  // FEATURE 5: LANGUAGE MATRIX TOGGLE
-  // ==============================
-  (function() {
+  // language decode toggle
+  (function(){
     const btn = document.getElementById('decodeBtn');
     const hint = document.getElementById('decodeHint');
     const blocks = document.querySelectorAll('.translatable');
-
     const translations = [
-      // Setswana
       [
-        "Ke godile ko Kimberley – plek ya di diamante – mme ke build sengwe se se strong jaaka letlapa. Ke simolotse go studyiya Computer Science ko UP, mara because of chelete ke ba kgone. Ga ka give up'a. Ke move'ile to CPUT, ka tsaya 12 distinctions, ka tsena mo SA HPC team, mme ka kgethiwa go ya ISC26 kwa Hamburg, Jeremane.",
+        "Ke godile ko Kimberley – plek ya di diamante – mme ke build sengwe se se strong jaaka letlapa. Ke simolotse go studyiya Computer Science ko UP, mara because of chelete ke ba kgone. Ga ka give up'a. Ke move'ile to CPUT, ka tsaya 12 distinctions mo 14, ka tsena mo SA HPC team, mme ka kgethiwa go ya ISC26 kwa Hamburg, Jeremane.",
         "Jaanong ke mo final year ya Computer Engineering, ke dira Electronic Communication, Embedded Systems, Networking, Databases le Design Project. Goal ya me ke go tsena deep mo HPC, Networking le Cybersecurity.",
         "Fa ke se kwa terminal, ke tshameka tennis kgotsa ke dira cluster sketches ka boithabiso. Ke bua Setswana, English, Sesotho, Sepedi, Afrikaans, isiZulu le isiXhosa. Ke sa ithuta – all the time."
       ],
-      // Afrikaans
       [
-        "Ek het grootgeword in Kimberley – die stad van diamante – en ek bou iets wat sterk is soos klip. Ek het Rekenaarwetenskap by UP begin studeer, maar geld het my gestop. Ek het nie opgegee nie. Ek het na CPUT toe gegaan, 12 onderskeidings gekry, by Suid-Afrika se HPC-span aangesluit, en is gekies vir ISC26 in Hamburg, Duitsland.",
+        "Ek het grootgeword in Kimberley – die stad van diamante – en ek bou iets wat sterk is soos klip. Ek het Rekenaarwetenskap by UP begin studeer, maar geld het my gestop. Ek het nie opgegee nie. Ek het na CPUT toe gegaan, 12 uit 14 onderskeidings gekry, by Suid-Afrika se HPC-span aangesluit, en is gekies vir ISC26 in Hamburg, Duitsland.",
         "Ek is nou in my finale jaar van Rekenaaringenieurswese. Ek studeer Elektroniese Kommunikasie, Ingebedde Stelsels, Netwerke, Databasisse en my Ontwerpprojek. My doel is om dieper te gaan in HPC, Netwerke en Kuberveiligheid.",
-        "As ek nie by ’n terminaal is nie, speel ek tennis of teken ek cluster diagramme vir fun. Ek praat Afrikaans, Setswana, Engels, Sesotho, Sepedi, isiZulu en isiXhosa. Ek leer nog – altyd."
+        "As ek nie by 'n terminaal is nie, speel ek tennis of teken ek cluster diagramme vir fun. Ek praat Afrikaans, Setswana, Engels, Sesotho, Sepedi, isiZulu en isiXhosa. Ek leer nog – altyd."
       ],
-      // Sepedi / Northern Sotho
       [
-        "Ke goletse Kimberley - motse wa dikhumo - gomme ke aga selo se tiilego. Ke thomile go ithuta Computer Science kwa UP, fela mathata a madi a nthibetse. Ga ke a emela. Ke ile CPUT, ka hwetsa dikgato tse 12, ka tsena sehlopeng sa HPC sa Afrika Borwa, mme ka kgethiwa go ya ISC26 kwa Hamburg, Jeremane.",
+        "Ke goletse Kimberley - motse wa dikhumo - gomme ke aga selo se tiilego. Ke thomile go ithuta Computer Science kwa UP, fela mathata a madi a nthibetse. Ga ke a emela. Ke ile CPUT, ka hwetsa dikgato tse 12 go tse 14, ka tsena sehlopeng sa HPC sa Afrika Borwa, mme ka kgethiwa go ya ISC26 kwa Hamburg, Jeremane.",
         "Ke mo ngwageng wa mafelelo wa Computer Engineering. Ke ithuta Dikgokagano tsa Elektroniki, Mekgwa ya Embedded, Netiweke, Dibanka tsa Data le Porojeke ya Tlhamo. Mokgwa wa ka ke go tsena ka botebo go HPC, Networking le Cybersecurity.",
         "Ge ke se terminal, ke bapala tenisi goba ke thutha ditlhopho tsa cluster. Ke bolela Sepedi, Setswana, Afrikaans, Sesotho, isiZulu, isiXhosa le Seisemane. Ke sa ithuta - ka mehla."
       ],
-      // English (original)
       null
     ];
-
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*><[]{}|';
-    let langIndex = 0;
-    let isAnimating = false;
+    let langIndex = 0, isAnimating = false;
     const originals = Array.from(blocks).map(b => b.innerHTML);
-
-    function scramble(el, targetText, duration) {
-      const steps = 18;
-      const stepTime = duration / steps;
-      let step = 0;
+    function scramble(el, targetText, duration){
+      const steps = 18; const stepTime = duration/steps; let step = 0;
       const iv = setInterval(() => {
         step++;
-        const progress = step / steps;
-        const scrambled = targetText.split('').map((ch, i) => {
+        const progress = step/steps;
+        const scrambled = targetText.split('').map((ch,i) => {
           if (ch === ' ' || ch === '\n') return ch;
-          if (i / targetText.length < progress) return ch;
-          return chars[Math.floor(Math.random() * chars.length)];
+          if (i/targetText.length < progress) return ch;
+          return chars[Math.floor(Math.random()*chars.length)];
         }).join('');
         el.textContent = scrambled;
-        if (step >= steps) { el.innerHTML = targetText; clearInterval(iv); }
+        if (step >= steps){ el.innerHTML = targetText; clearInterval(iv); }
       }, stepTime);
     }
-
-    btn.addEventListener('click', () => {
+    if (btn) btn.addEventListener('click', () => {
       if (isAnimating) return;
       isAnimating = true;
       langIndex = (langIndex + 1) % 4;
-
-      const labels = ['Setswana 🇿🇦', 'Afrikaans 🇿🇦', 'Sepedi 🇿🇦', 'English 🌍'];
+      const labels = ['Setswana','Afrikaans','Sepedi','English'];
       hint.textContent = 'Decoding to ' + labels[langIndex] + '...';
-
-      // Phase 1: scramble to hex/random
       blocks.forEach(b => {
-        const len = b.textContent.length;
-        let scrambled = '';
-        for (let i = 0; i < len; i++) {
-          scrambled += b.textContent[i] === ' ' ? ' ' : chars[Math.floor(Math.random() * chars.length)];
-        }
+        const len = b.textContent.length; let scrambled = '';
+        for (let i=0;i<len;i++){ scrambled += b.textContent[i] === ' ' ? ' ' : chars[Math.floor(Math.random()*chars.length)]; }
         b.textContent = scrambled;
       });
-
       setTimeout(() => {
-        blocks.forEach((b, i) => {
+        blocks.forEach((b,i) => {
           const target = translations[langIndex] ? translations[langIndex][i] : originals[i];
           scramble(b, target, 900);
         });
@@ -1253,6 +621,9 @@
     });
   })();
 
+  // console brand message (kept — low-cost easter egg for anyone who opens devtools)
+  console.log('%cbosvark.dev', 'color:#e8a13a;font-size:20px;font-weight:800;font-family:monospace;');
+  console.log('%cLooking under the hood? github.com/thabobosvark', 'color:#57c7b8;font-family:monospace;font-size:12px;');
   </script>
 </body>
 </html>
